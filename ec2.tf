@@ -3,6 +3,6 @@
 #  instance_type = "t3.micro"
 
 #  tags = {
-#    Name = "HelloWorld"
+#    Name = "HelloWorlds"
 #  }
 #}
