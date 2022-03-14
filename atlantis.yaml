@@ -1,7 +1,7 @@
 version: 3
 projects:
 
-- dir: AWS/configurando_role_terraform
+- dir: .
   workflow: custom1
 
 workflows:
