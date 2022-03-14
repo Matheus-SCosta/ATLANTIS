@@ -6,17 +6,17 @@ projects:
 
 workflows:
   custom1:
-    plan:
+    validate:
       steps:
       - init
+      - run: echo "Executando terraform plan"
+      - validate
+    plan:
+      steps:
       - run: echo "Executando terraform plan"
       - plan
     apply:
       steps:
       - run: echo "Executando terraform apply, tentando rsrs"
-      - apply
-    destroy:
-      steps:
-      - run: echo "Executando terraform destroy"
-      - destroy  
+      - apply  
     
