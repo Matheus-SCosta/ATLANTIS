@@ -1,0 +1,18 @@
+version: 3
+projects:
+
+- dir: .
+  workflow: plan_and_apply
+
+workflows:
+  plan_and_apply:
+    plan:
+      steps:
+      - init
+      - run: echo "Executando terraform plan"
+      - plan
+    apply:
+      steps:
+      - run: echo "Executando terraform apply, tentando rsrs"
+      - apply
+    
