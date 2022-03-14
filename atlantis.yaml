@@ -6,13 +6,10 @@ projects:
 
 workflows:
   custom1:
-    validate:
-      steps:
-      - init
-      - run: echo "Executando terraform plan"
-      - validate
     plan:
       steps:
+      - init
+      - validate
       - run: echo "Executando terraform plan"
       - plan
     apply:
