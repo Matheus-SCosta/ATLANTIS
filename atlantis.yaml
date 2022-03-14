@@ -3,6 +3,7 @@ projects:
 
 - dir: .
   workflow: custom1
+  terraform_version: v0.11.0
 
 workflows:
   custom1:
