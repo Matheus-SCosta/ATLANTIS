@@ -3,6 +3,6 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorlds"
+    Name = "teste_atlantis"
   }
 }
