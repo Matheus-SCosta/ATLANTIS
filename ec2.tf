@@ -2,14 +2,7 @@
 #  ami           = "ami-0231217be14a6f3ba"
 #  instance_type = "t3.micro"
 
-<<<<<<< HEAD
-  tags = {
-    Name = "HelloWorld"
-  }
-}
-=======
 #  tags = {
 #    Name = "HelloWorld"
 #  }
 #}
->>>>>>> new
