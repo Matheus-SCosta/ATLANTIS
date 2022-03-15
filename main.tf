@@ -1,5 +1,5 @@
 terraform {
-  required_version = "1.1.4"
+  required_version = "0.14.3"
 
   required_providers {
     aws = {
@@ -7,14 +7,14 @@ terraform {
       version = "3.73.0"
     }
   }
-  backend "s3" {
-    bucket         = "tfstate-backend-234234234234234-ec2-s3"
-    key            = "tfstate-backend.tfstate"
-    region         = "us-east-2"
-    profile        = "terraformKEY"
-    dynamodb_table = "terraform-lock"
-    encrypt        = true
-  }
+  #backend "s3" {
+  #  bucket         = "tfstate-backend-234234234234234-ec2-s3"
+  #  key            = "tfstate-backend.tfstate"
+  #  region         = "us-east-2"
+  #  profile        = "terraformKEY"
+  #  dynamodb_table = "terraform-lock"
+  #  encrypt        = true
+ # }
 }
 
 provider "aws" {
