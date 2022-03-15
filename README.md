@@ -5,7 +5,7 @@
 O atlantis é um aplicativo que serve para automatizar o terraform em sua infraestrutura ouvindo webhooks do git sobre pull requests, ajudando a manter a colaboração de todos quanto ao projeto, já que resolve a questão de cada um executar o código terraform em seu próprio computador, dificultando por exemplo para saber sobre o estado de sua infraestrutura.
 
 
-## Instalação:
+## INSTALAÇÃO:
 
 O atlantis funciona com a maioria dos hosts git, como github, gitlab, Bitbucket, Azure DevOps por exemplo. **OBS: No nosso exemplo utilizaremos como exemplo o GitHub, porém as configurações para os outros hosts git está disponĩvel na documentação do atlantis**. O atlantis suporta todas as versões do terraform podendo ser configurado para usar versões diferentes para diferentes respositórios/projetos, suportando também todos os tipos de back-end do terraform, exceto o estado local.
 
@@ -55,7 +55,7 @@ OBSERVAÇÃO Se você estiver adicionando um webhook a vários repositórios, ca
 * Para testar se há conexão entre o webhook e o servidor do atlantis, crie uma branch a partir da master/main, faça algum tipo de alteração, dê o push para o repositório e em seguida crie um pull requests e comente com o atlantis plan -d **nome_diretorio** e veja se há alguma resposta do atlantis com o output do terraform. Em seguida observe se há saida de logs do container. Para visualizar os logs, utilize o subcomando **logs** do docker. Em caso de não ter nenhum retorno, verifique suas configurações.
 
 
-# CONFIGURAÇÃO:
+## CONFIGURAÇÃO:
 
 Existem três métodos para configurar o Atlantis:
 
