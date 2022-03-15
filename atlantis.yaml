@@ -12,10 +12,10 @@ workflows:
       steps:
       - init
 
-      - run: echo "Executando terraform plan"
+      - run: echo "Executando terraform plan terraform"
       - plan
     apply:
       steps:
-      - run: echo "Executando terraform apply, tentando rsrs"
+      - run: echo "Executando terraform apply terraform"
       - apply  
     
