@@ -12,7 +12,6 @@ workflows:
       - init
       - run: echo "Executando terraform plan"
       - plan
-      - run: infracost breakdown --path=$PLANFILE --format=json --out-file=/tmp/$BASE_REPO_OWNER-$BASE_REPO_NAME-$PULL_NUM-$WORKSPACE-$REPO_REL_DIR-infracost.json
     apply:
       steps:
       - run: echo "Executando terraform apply"
