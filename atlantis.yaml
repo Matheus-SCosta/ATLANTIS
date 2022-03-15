@@ -4,8 +4,7 @@ projects:
 - dir: .
   workflow: custom1
   terraform_version: v1.1.4 
-  autoplan:
-    when_modified: [ "*.tf*" ]
+  
 workflows:
   custom1:
     plan:
