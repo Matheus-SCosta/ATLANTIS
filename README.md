@@ -21,10 +21,10 @@ O ideal é que seja criado um usuário dedicado para o uso do atlantis, para que
 
 ```
 FROM ghcr.io/runatlantis/atlantis:dev
-ENV AWS_ACCESS_KEY_ID=AKIAVZZAYQ4MTZAKVM7U
-ENV AWS_SECRET_ACCESS_KEY=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
+ENV AWS_ACCESS_KEY_ID=AKIAVZZAYQ47
+ENV AWS_SECRET_ACCESS_KEY=lt8b8ZkBJEbH1d6BmK5ItujsT1lu
 ENV ATLANTIS_GH_WEBHOOK_SECRET=disazhwlzdbipzsesspwummekzxntarcvtmwgtueqosrbzfxsugvlqyszblqbkiygqmxtftsnrjgdmdepnjjqjmchyhkavpdlhrkgsxqlvghszymsmecpgeirnpvivkm
-ENV ATLANTIS_GH_TOKEN=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
+ENV ATLANTIS_GH_TOKEN=gcdHBFa0UisZL3wh09ri3apiU
 ENV ATLANTIS_GH_USER=Matheus-SCosta
 ADD repos.yaml home/atlantis/repos.yaml   # Arquivo será criado durante a explicação.
 ENTRYPOINT [ "atlantis", "server", "--repo-allowlist=*", "--repo-config=home/atlantis/repos.yaml" ]
