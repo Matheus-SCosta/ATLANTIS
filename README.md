@@ -107,6 +107,8 @@ No nosso exemplo vamos fazer a criação de um arquivo do lado do servidor e a c
             - apply  
     ```
 
+    Nesse exemplo simples é definidio um workflow para o diretório corrente ".", com o nome "custom1" cujo é feito o plan e apply com os seus respectivos passos.
+
 Não será abordado nesse tópico mas deixando claro a opção de implementar workspaces pré-fluxo e pós-fluxos. Por exemplo pode ser necessário que algum script seja executado antes que o atlantis faça o plan ou então que após o plan seja necessário que seja executado o infracost.
 
 
